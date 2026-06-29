@@ -672,4 +672,41 @@ footer {
     text-align: center;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    width: 64px;
+    height: 64px;
 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    background-color: #7882a4;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+    z-index: 9999;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
+
+.back-to-top-label {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.back-to-top i {
+    font-size: 20px;
+    line-height: 1;
+}
