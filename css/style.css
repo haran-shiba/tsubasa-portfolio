@@ -414,7 +414,7 @@ section h2 {
 }
 
 .project-front.project-01 {
-    background-image: url('../portfolio-images/S__67108871.jpg');
+    background-image: url('../portfolio-images/dog_test.png');
     background-size: cover;
     background-position: center;
 }
@@ -425,7 +425,7 @@ section h2 {
     background-size: cover;
     background-position: center;
 }
-
+/*
 .project-front.project-03 {
     background-color: #e7fbbe;
 }
@@ -433,6 +433,7 @@ section h2 {
 .project-front.project-04 {
     background-color: #ffcbcb;
 }
+*/
 
 .project-front .info {
     display: none;
