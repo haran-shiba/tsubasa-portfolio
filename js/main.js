@@ -16,7 +16,6 @@ setInterval(() => {
 const phrases = [
     "ITパスポート合格",
     "AWS(8月受験予定)",
-    "分析/デザイン/管理の経験を活かす、マルチスキルワーカー",
 ];
 
 let phraseIndex = 0;

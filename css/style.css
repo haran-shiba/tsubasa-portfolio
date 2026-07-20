@@ -396,6 +396,10 @@ section h2 {
     transform: rotateY(180deg);
 }
 
+.flip.active .project-front {
+    visibility: hidden;
+}
+
 .project-front,
 .project-back {
     backface-visibility: hidden;
@@ -420,20 +424,17 @@ section h2 {
 }
 
 .project-front.project-02 {
-    background-color: #d6e5fa;
     background-image: url('../portfolio-images/amazon.png');
     background-size: cover;
     background-position: center;
 }
 .project-front.project-03 {
-    background-color: #e7fbbe;
     background-image: url('../portfolio-images/googleform.png');
     background-size: cover;
     background-position: center;
 }
 
 .project-front.project-04 {
-    background-color: #ffcbcb;
     background-image: url('../portfolio-images/kadocomi.png');
     background-size: cover;
     background-position: center;
@@ -453,18 +454,20 @@ section h2 {
     gap: 12px;
 }
 
-.project-front:hover::after {
-    background-color: rgba(0, 0, 0, 0.45);
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+@media (hover: hover) {
+    .project-front:hover::after {
+        background-color: rgba(0, 0, 0, 0.45);
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.project-front:hover .info {
-    display: flex;
+    .project-front:hover .info {
+        display: flex;
+    }
 }
 
 .info .title {
@@ -781,4 +784,16 @@ footer {
         width: 50px;
         height: 50px;
     }
+
+    .ability-percent {
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ability-percent .percent {
+        overflow: visible;
+        text-overflow: clip;
+    }
+
 }
